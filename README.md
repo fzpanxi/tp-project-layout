@@ -25,6 +25,7 @@ composer install
 | |____Xxx.php      TP框架控制器文件
 |____domain         类 DDD domain 层
 | |____entity       实体
+| |____event        处理event相关的业务逻辑
 | |____repository   仓储（类似DDD repository，例：UserRepo用户相关的仓储）
 | |____service      服务（类似DDD domain service，例：UserService用户相关的领域服务）
 |____intra          持久化、存储层、基础组件封装等
