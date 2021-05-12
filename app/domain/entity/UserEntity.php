@@ -128,11 +128,12 @@ class UserEntity
 
     /**
      * 修改密码
-     * @param $oldPwd
-     * @param $newPwd
+     * @sr $oldPwd
+     * @param string $oldPwd
+     * @param string $newPwd
      * @return bool
      */
-    public function changePassword(string $oldPwd, string $newPwd): bool
+    public function changePassword(string $oldPwd, $newPwd): bool
     {
         if ($this->password === $oldPwd) {
             $this->setPassword($newPwd);
