@@ -23,6 +23,6 @@ class Error extends \Exception
     {
         return $this->error;
     }
-    
+
 
 }

@@ -6,6 +6,7 @@ namespace app\library\error;
 
 use library\error\response\ApiResponse;
 use think\exception\Handle;
+use think\exception\HttpException;
 use think\facade\Env;
 use think\Response;
 use Throwable;
