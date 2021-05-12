@@ -42,7 +42,7 @@ class User extends BaseController
                 ->scene('getUser')
                 ->check($request->param());
             try {
-                $user = $this->userApplication->getUser((int)$request->param('id'));
+                $user = $this->userApplication->getUser((int)$request->param('user_id'));
                 return ApiResponse::success($user);
             } catch (Error $e) {
                 return ApiResponse::error($e->getError());

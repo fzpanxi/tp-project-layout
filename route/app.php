@@ -12,6 +12,6 @@ use think\facade\Route;
 
 Route::group('v1', function () {
     Route::group('users', function () {
-        Route::rule(':id', 'User/getUser');
+        Route::rule(':user_id', 'User/getUser');
     });
 });

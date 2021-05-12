@@ -9,12 +9,12 @@ use think\Validate;
 class UserValidate extends Validate
 {
     protected $rule = [
-        'id' => 'require|number',
+        'user_id' => 'require|number',
     ];
     protected $message = [
-        'id.number' =>  'invalid id',
+        'user_id.number' =>  'invalid user_id',
     ];
     protected $scene = [
-        'getUser' => ['id'],
+        'getUser' => ['user_id'],
     ];
 }
