@@ -4,7 +4,8 @@
 namespace app\library\error;
 
 
-use library\error\response\ApiResponse;
+
+use app\library\response\ApiResponse;
 use think\exception\Handle;
 use think\exception\HttpException;
 use think\facade\Env;
