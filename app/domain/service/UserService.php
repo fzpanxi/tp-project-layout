@@ -29,10 +29,11 @@ class UserService
     {
         $user = $this->repo->getUserByCache($userID);
         if (!$user->getUserID()) {
+            // db query
             $user = $this->repo->getUser($userID);
         }
         if (!$user->getUserID()) {
-            // 未找到用户信息
+            // not found
             throw new Error(new NotFound('user is not found'));
         }
         return $user;

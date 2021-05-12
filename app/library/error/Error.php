@@ -3,7 +3,6 @@
 
 namespace app\library\error;
 
-
 use Throwable;
 
 class Error extends \Exception
@@ -12,7 +11,7 @@ class Error extends \Exception
 
     function __construct(object $error)
     {
-        parent::__construct('', 0, null);
+        parent::__construct($error->getMessage(), $error->getCode());
         $this->error = $error;
     }
 
@@ -23,6 +22,4 @@ class Error extends \Exception
     {
         return $this->error;
     }
-
-
 }
