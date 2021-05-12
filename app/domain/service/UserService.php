@@ -5,6 +5,7 @@ namespace app\domain\service;
 
 
 use app\domain\entity\UserEntity;
+use app\domain\repository\UserRepo;
 use app\library\error\Error;
 use app\library\error\NotFound;
 
@@ -13,7 +14,7 @@ class UserService
 {
     private $repo;
 
-    function __construct($repo)
+    function __construct(UserRepo $repo)
     {
         $this->repo = $repo;
     }
