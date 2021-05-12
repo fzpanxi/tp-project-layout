@@ -132,7 +132,7 @@ class UserEntity
      * @param $newPwd
      * @return bool
      */
-    public function changePassword($oldPwd, $newPwd): bool
+    public function changePassword(string $oldPwd, string $newPwd): bool
     {
         if ($this->password === $oldPwd) {
             $this->setPassword($newPwd);
