@@ -126,4 +126,20 @@ class UserEntity
         $this->updateTime = $updateTime;
     }
 
+    /**
+     * 修改密码
+     * @param $oldPwd
+     * @param $newPwd
+     * @return bool
+     */
+    public function changePassword($oldPwd, $newPwd): bool
+    {
+        if ($this->password === $oldPwd) {
+            $this->setPassword($newPwd);
+            return true;
+        }
+        return false;
+    }
+
+
 }
