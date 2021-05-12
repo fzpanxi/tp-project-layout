@@ -27,7 +27,7 @@ composer install
 | |____entity       实体
 | |____repository   仓储（类似DDD repository，例：UserRepo用户相关的仓储）
 | |____service      服务（类似DDD domain service，例：UserService用户相关的领域服务）
-|____intra          持久化、存储层
+|____intra          持久化、存储层、基础组件封装等
 | |____model        TP模型层（持久化数据等)
 | |____XxxInfra.php 实现domian repository的接口（例：实现UserRepo的UserInfra），同时封装cache、db等基础组件
 |____library        公共库目录
