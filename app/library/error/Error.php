@@ -17,11 +17,12 @@ class Error extends \Exception
     }
 
     /**
-     * 获取异常详情
-     * @return mixed
+     * @return object
      */
-    public function getError()
+    public function getError(): object
     {
         return $this->error;
     }
+    
+
 }
