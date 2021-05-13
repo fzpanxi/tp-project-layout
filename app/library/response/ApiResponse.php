@@ -14,7 +14,7 @@ class ApiResponse
      * @param $data
      * @return Json
      */
-    public static function success(object $data)
+    public static function success(object $data) : Json
     {
         $jsonBuilder = Gson::builder()->build();
         return json($jsonBuilder->toNormalized($data), 200);
